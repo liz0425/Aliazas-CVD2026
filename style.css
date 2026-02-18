@@ -553,10 +553,10 @@ color: var(--clr-light);
 .updates__wrapper{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 5rem;
+    gap: 3rem;
     margin: 0 auto;
     max-width: 120rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 .updates__wrapper, .title{
     margin-top: 6rem;
@@ -570,17 +570,16 @@ color: var(--clr-light);
     font-size: 18px;
     color: var(--clr-primary);
     font-weight: 700; 
+    gap: 1.5rem;
 }
 .updates__left p{
-    gap: 1.5rem;
-    font-size: 15px;
-
+    margin: 1rem 0 3rem 0;
 }
 .updates__social{
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
-    font-size: 20px;
+    font-size: 25px;
 }
 .updates__social p{
     gap: 1.5rem;
