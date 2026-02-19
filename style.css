@@ -552,24 +552,21 @@ color: var(--clr-light);
 }
 .updates__wrapper{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.3fr 0.5fr;
     gap: 3rem;
     margin: 0 auto;
     max-width: 120rem;
     margin-bottom: 2rem;
-}
-.updates__wrapper, .title{
-    margin-top: 6rem;
 }
 .updates__left h2{
     color: var(--clr-primary);
     font-size: 48px;
     font-weight: 700;
 }
-.updates__left h5{
-    font-size: 18px;
+.updates__left h4{
+    font-size: 24px;
     color: var(--clr-primary);
-    font-weight: 700; 
+    font-weight: 600; 
     gap: 1.5rem;
 }
 .updates__left p{
@@ -592,9 +589,136 @@ color: var(--clr-light);
     color: var(--clr-primary);
 }
 .updates__img img{
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 100%;
 }
+.updates__right h4{
+    font-size: 24px;
+    color: var(--clr-primary);
+    font-weight: 600; 
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.updates__right table{
+    line-height: 5rem;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.categories .title{
+    margin-bottom: 1rem;
+}
+.updates__right h5{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.recent__post .title {
+    margin-top: 10rem;
+}
+.recent__img{
+    width: 100%;
+    object-fit: cover;
+}
+.recent__img img{
+    object-fit: cover;
+    display: block;
+}
+.recent__items{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 4rem 0;
+}
+.recent__text{
+    text-align: justify;
+
+}
+.recent__text h5{
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+.recent__text p{
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+.tags__ .title {
+    margin-top: 23rem;
+    margin-bottom: 3rem;
+}
+.tags__ .tags{
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 15px; 
+}
+.contacts{
+    height:80vh;
+    background-color: var(--clr-dark);
+    width: 100%;
+    border-bottom: 1px solid var(--clr-light);
+}
+.contacts .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+}
+.contacts__wrapper h1{
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: 71px;
+    max-width: 10rem;
+    margin-top: 3rem;
+}
+.contacts__wrapper .title p{
+    color: var(--clr-light);
+    font-size: 18px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.contact__details{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+
+}
+.contact__details p{
+    color: var(--clr-light);
+    font-size: 18px;
+}
+.contact__details li a{
+    color: var(--clr-primary);
+    font-size: 25px;
+}
+.contact__info form{
+    margin-bottom: 18rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.contact__info {
+    margin-top: 18rem;
+}
+.contact__info input {
+    height: 75px;
+}
+.contact__info input::placeholder, textarea::placeholder {
+    color: var(--clr-dark);
+    font-size: 18px;
+}
+.button__contact {
+    text-align: right;
+    margin-top: 3rem;
+}
+
 /* ASSETS */
 .title h2{
     font-size: 48px;
@@ -660,7 +784,6 @@ color: var(--clr-light);
     height: 45%;
     transition: all 0.5s ease-in-out;
 }
-
 .btn{
     display: inline-block;
     background-color: transparent;
@@ -690,6 +813,15 @@ color: var(--clr-light);
     color: var(--clr-dark);
     transition: all 0.5s ease-in-out;
 }
+.update-no-bg-btn{
+    color: var(--clr-primary);
+    transition: all 0.5s ease-in-out;
+    
+}
+.update-no-bg-btn:hover{
+    color: var(--clr-dark);
+    transition: all 0,5s ease-in-out;
+}
 .no-bg-btn{
     color: var(--clr-primary);
     transition: all 0.5s ease-in-out;
@@ -697,8 +829,15 @@ color: var(--clr-light);
 }
 .no-bg-btn:hover{
     color: var(--clr-dark);
-    transition: all 0,5s ease-in-out;
-
+    transition: all 0.5s ease-in-out;
+}
+.btn.bg--light{
+    color: var(--clr-dark);
+}
+.btn.bg--light:hover{
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    transition: all 0.5s ease-in-out;
 }
 .cards2{
     width: 100%;
@@ -740,10 +879,10 @@ color: var(--clr-light);
     
 }
 .chevron{
-  display: grid;
-  place-content: center;
-  color: var(--clr-primary);
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-size: 24px;
+    display: grid;
+    place-content: center;
+    color: var(--clr-primary);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
 }
